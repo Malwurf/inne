@@ -1,6 +1,17 @@
+=begin
+a) Sprawdź, czy lista A zawiera parzystą liczbę elementów; jeżeli tak jest, to usuń z niej drugi
+element.
+1Lista 3. Wstęp do programowania 2
+b) Bez wstawiania nowych elementów do listy: nadaj pierwszemu wyrazowi listy A wartość 0;
+środkowemu: wartość 10; ostatniemu: wartość 100.
+c) Bez zmiany wartości istniejących elementów listy: wstaw na pozycję pierwszą listy A nowy
+element o wartości 1; za pozycją ostatnią nowy element o wartości 101.
+d) Podaj co najmniej 3 różne sposoby umieszczenia nowego elementu na końcu listy.
+e) Pobierz od użytkownika numer elementu; wstaw na tę pozycję listy A nowy element o wartości
+99.
+=end
+
 l = [1, 3, 5, 2, 0, 6]
-
-
 
 #a
 if l.length.even?
