@@ -30,4 +30,4 @@ case bmi
     puts "podano błędne wartości !"
 end
 
-puts puts
+puts
