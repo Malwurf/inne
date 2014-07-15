@@ -5,20 +5,14 @@ puts "Podaj imię żeńskie: "
 @k = gets.chomp.upcase
 
 def fit
-  @z=0
-  @m.each_byte do |l|
-    @z = @z+l
-  end
-  @wm = @z
+  wm=0
+  @m.each_byte { |l| wm +=l }
 
-  @z=0
-  @k.each_byte do |l|
-    @z = @z+l
-  end
-  @wk = @z
-  @result = (@wm+@wk)%100
+  wk=0
+  @k.each_byte { |l| wk +=l }
+  result = (wm+wk)%100
 
-  puts "\n#{@m.downcase.capitalize} i #{@k.downcase.capitalize}, pasujecie do siebie w #{@result.to_i}%"
+  puts "\n#{@m.downcase.capitalize} i #{@k.downcase.capitalize}, pasujecie do siebie w #{result}%"
 end
 
 fit
