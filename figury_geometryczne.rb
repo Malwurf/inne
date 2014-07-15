@@ -59,11 +59,3 @@ elsif figura == "trojkat"
 else
   puts "Nie ma takiej figury !"
 end
-
-
-
-
-#puts prostokat(5,6)
-#puts kwadra(5)
-#puts kolo(5)
-#puts trojkat(5,6,7)
