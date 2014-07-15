@@ -1,20 +1,24 @@
+system('cls')
 puts "Podaj imię męskie: "
-@m = gets.chomp
+@m = gets.chomp.upcase
 puts "Podaj imię żeńskie: "
-@k = gets.chomp
-
-@ml = @m.length
-@kl = @k.length
+@k = gets.chomp.upcase
 
 def fit
-   @result = ((@ml + @kl)/2)*10
-   if @result <= 0
-     puts "Nie podano imion !"
-   elsif @result > 100
-     puts "#{@m.capitalize} i #{@k.capitalize}, pasujecie do siebie w 100%"
-   else
-     puts "#{@m.capitalize} i #{@k.capitalize}, pasujecie do siebie w #{@result}%"
-   end
+  @z=0
+  @m.each_byte do |l|
+    @z = @z+l
+  end
+  @wm = @z
+
+  @z=0
+  @k.each_byte do |l|
+    @z = @z+l
+  end
+  @wk = @z
+  @result = (@wm+@wk)%100
+
+  puts "\n#{@m.downcase.capitalize} i #{@k.downcase.capitalize}, pasujecie do siebie w #{@result.to_i}%"
 end
 
 fit
