@@ -4,11 +4,11 @@ puts "Wpisz wiadomość do zakodowania: "
 def szyfruj
   @a = []
   @t.each_byte do |l|
-    n = l+2
+    n = l+3
     @a << n
   end
 print "Wiadomość po zaszyfrowaniu: "
-@a.each { |d| print d.chr }
+@a.each { |d| print d.chr.downcase }
 end
 
 szyfruj
